@@ -1,4 +1,9 @@
 public class Q8_PrimeAnagramPalindrome {
+    /**
+     * Find numbers that are prime, by checking if it is divisible by any number other than 1 or number.
+     * @param num
+     * @return
+     */
     public static boolean findPrimeNumbers(int num)
     {
         if(num == 0 || num == 1)
@@ -10,6 +15,12 @@ public class Q8_PrimeAnagramPalindrome {
         }
         return true;
     }
+
+    /**
+     * Checking palindrome by converting number to string and comparing with reverse.
+     * @param num
+     * @return
+     */
     public static boolean AnagramPalindrome(int num)
     {
         String n1 = Integer.toString(num);
@@ -21,6 +32,7 @@ public class Q8_PrimeAnagramPalindrome {
         else
             return false;
     }
+    
     public static void main(String[] args)
     {
         for(int i=0;i<1000;i++)
